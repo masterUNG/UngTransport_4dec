@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "683030558592",
+    "project_id": "ungtransport-7e3bd",
+    "storage_bucket": "ungtransport-7e3bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683030558592:android:67041da2408949a9c6b365",
+        "android_client_info": {
+          "package_name": "com.flutterthailand.ungtransport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683030558592-r8vlkho8mn9ppk3s1n80i5sep558auka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterthailand.ungtransport",
+            "certificate_hash": "49c386dbb4b248e00e921054779d437f6f739feb"
+          }
+        },
+        {
+          "client_id": "683030558592-9903t7ug47fqpojrqasstc3eu0n36kml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuT0FVZ6iy1iTfnz5qnZUhsmYcMWQSk0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683030558592-9903t7ug47fqpojrqasstc3eu0n36kml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
