@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:ungtransport/utility/app_constant.dart';
+import 'package:ungtransport/utility/app_service.dart';
 import 'package:ungtransport/widget/widget_button.dart';
 import 'package:ungtransport/widget/widget_form.dart';
 import 'package:ungtransport/widget/widget_head.dart';
-import 'package:ungtransport/widget/widget_image.dart';
-import 'package:ungtransport/widget/widget_text.dart';
 
-class Authen extends StatelessWidget {
+class Authen extends StatefulWidget {
   const Authen({super.key});
+
+  @override
+  State<Authen> createState() => _AuthenState();
+}
+
+class _AuthenState extends State<Authen> {
+  @override
+  void initState() {
+    super.initState();
+    AppService().aboutNoti();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +42,7 @@ class Authen extends StatelessWidget {
                       children: [
                         const WidgetHead(),
                         WidgetForm(
-                          hint: '081-123-4567',
+                          hint: '081-123-4568',
                           textInputFormaters: [
                             MaskTextInputFormatter(mask: '###-###-####')
                           ],

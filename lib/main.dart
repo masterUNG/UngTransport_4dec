@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ungtransport/state_mobile/authen.dart';
@@ -28,17 +29,19 @@ var getPages = <GetPage<dynamic>>[
 
 String keyPage = AppConstant.pageAuthenMobile;
 
-void main() {
+Future<void> main() async {
   if (kIsWeb) {
     keyPage = AppConstant.pageAuthenWeb;
+    runApp(const MyApp());
+  } else {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp().then((value) {
+      runApp(const MyApp());
+    }).catchError((onError) {
+      print('onError --> $onError');
+    });
   }
-
-
-
-  runApp(const MyApp());
 }
-
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
