@@ -5,6 +5,7 @@ class AppService {
     FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
     String? token = await firebaseMessaging.getToken();
     print('token --> $token');
+    
 
     //On Standby
     FirebaseMessaging.onMessage.listen((event) {
